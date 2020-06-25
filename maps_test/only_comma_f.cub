@@ -1,0 +1,19 @@
+NO sprites_test/north.xpm
+WE sprites_test/west.xpm             
+C                    234,4, 123        
+EA  sprites_test/east.xpm
+
+R            1023 2 
+
+
+SO sprites_test/south.xpm         
+F ,,                       
+
+
+
+S sprites_test/sprite.xpm
+
+            
+     N       
+            
+            
