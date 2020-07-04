@@ -6,7 +6,7 @@
 /*   By: Bastian <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/09 10:49:32 by Bastian           #+#    #+#             */
-/*   Updated: 2020/06/18 10:54:01 by Bastian          ###   ########.fr       */
+/*   Updated: 2020/07/01 11:37:52 by Bastian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ int			main(int argc, char **argv)
 		close(fd);
 		mlx->mlx_init = mlx_init();
 		if (ft_check_data((mlx)))
-			ft_init_screen((mlx));
+			ft_raycast_launch((mlx));
 		free_cub(&(mlx->cub));
 		free((mlx));
 	}

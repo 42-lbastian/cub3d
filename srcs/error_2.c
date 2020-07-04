@@ -6,7 +6,7 @@
 /*   By: Bastian <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/09 11:22:49 by Bastian           #+#    #+#             */
-/*   Updated: 2020/06/18 10:52:15 by Bastian          ###   ########.fr       */
+/*   Updated: 2020/06/26 11:55:28 by Bastian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,18 +90,15 @@ int			ft_verif_map(t_cub cub)
 
 int			ft_verif_sprites(t_mlx *mlx)
 {
-	int reso1;
-	int reso2;
-
-	if (!((mlx->image.south = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_s, &reso1, &reso2)) && mlx->image.south))
+	if (!((mlx->image.south = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_s, &mlx->image.width, &mlx->image.height)) && mlx->image.south))
 		return (1);
-	if (!((mlx->image.north = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_n, &reso1, &reso2)) && mlx->image.south))
+	if (!((mlx->image.north = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_n, &mlx->image.width, &mlx->image.height)) && mlx->image.north))
 		return (1);
-	if (!((mlx->image.east = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_e, &reso1, &reso2)) && mlx->image.south))
+	if (!((mlx->image.east = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_e, &mlx->image.width, &mlx->image.height)) && mlx->image.east))
 		return (1);
-	if (!((mlx->image.west = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_w, &reso1, &reso2)) && mlx->image.south))
+	if (!((mlx->image.west = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_w, &mlx->image.width, &mlx->image.height)) && mlx->image.west))
 		return (1);
-	if (!((mlx->image.sprite = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_sp, &reso1, &reso2)) && mlx->image.south))
+	if (!((mlx->image.sprite = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_sp, &mlx->image.width, &mlx->image.height)) && mlx->image.sprite))
 		return (1);
 	return (0);
 }

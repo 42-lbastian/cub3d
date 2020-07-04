@@ -33,21 +33,13 @@ int             close_mlx(int keycode, t_vars **vars)
 
 int				toto(t_vars **vars)
 {
-	int i = 0;
-	int bordel;
-	for (int y = 0; y < (*vars)->nik.reso2; y+=(*vars)->nik.dist_wall)
-	{
-		for (int x = 0; x < (*vars)->nik.reso; x+=(*vars)->nik.dist_wall)
-		{
-				mlx_pixel_put((*vars)->init, (*vars)->win, x/(*vars)->nik.dist_wall, y/(*vars)->nik.dist_wall, (*vars)->nik.data[i]);
-				if (x + (*vars)->nik.dist_wall <= (*vars)->nik.reso)
-					i += (*vars)->nik.dist_wall;
-				else
-					i += (*vars)->nik.reso - x;
-		}
-		i += ((*vars)->nik.dist_wall - 1) * (*vars)->nik.reso;
-	}
 
+	unsigned  int color = mlx_get_color_value((*vars)->init, (255 << 16) + (0 << 8) + 0);
+	for (int z = 32; z> 0; z++)
+		printf("%d ", color << z);
+	printf("\n");
+	printf("\n");
+	printf("\n");
 	return (1);
 }
 
@@ -65,10 +57,9 @@ int             main(void)
 	vars->init = mlx_init();
 	vars->win = mlx_new_window(vars->init, 1080, 720, "Hello world!");
 	mlx_hook(vars->win, 2, 1L<<0, close_mlx, &vars);
-	vars->nik.image = mlx_xpm_file_to_image(vars->init,"sprites_test/south.xpm", &(vars->nik.reso), &(vars->nik.reso2));
+	vars->nik.image = mlx_xpm_file_to_image(vars->init,"text/north.xpm", &(vars->nik.reso), &(vars->nik.reso2));
 	printf("%d\t%d\n", vars->nik.reso, vars->nik.reso2);
 	vars->nik.data = (unsigned int *)mlx_get_data_addr(vars->nik.image, &bpp, &sizeline, &endian);
-//	mlx_put_image_to_window(vars->mlx, vars->win, vars->nik.image, 400, 0);
 	mlx_loop_hook(vars->init, toto, &vars);
 	toto(&vars);
 	mlx_loop(vars->init);

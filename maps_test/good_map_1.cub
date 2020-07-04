@@ -1,17 +1,17 @@
-NO sprites_test/north.xpm
-WE sprites_test/west.xpm             
+NO text/north.xpm
+WE text/west.xpm             
 C 255,0,255 
-EA  sprites_test/east.xpm
+EA  text/east.xpm
 
-R            1080 720 
+R            960 720 
 
 
-SO sprites_test/south.xpm         
+SO text/south.xpm         
 F 255,255,255
 
 
 
-S sprites_test/north.xpm
+S text/s.xpm
 
 
 
@@ -31,7 +31,7 @@ S sprites_test/north.xpm
 1000000000000000000000000000000000000111111111111111110001
 1111111111111111111111111111111000111111111111111111110001
                               1000000000000000000000000001
-                              1000000000000000000000000001
+                              1000000000000200000000000001
                               1000000000000000000000000001
                               1111111111111011111111111111
                              110000000000000000000000000011

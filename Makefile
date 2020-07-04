@@ -1,6 +1,6 @@
 NAME = cub3D
 
-SRCS = srcs/cub3d.c srcs/error.c srcs/error_2.c srcs/parse_main_map.c srcs/parse_map_utils.c srcs/parse_news_fc_r.c srcs/tools.c srcs/init_screen.c
+SRCS = srcs/cub3d.c srcs/error.c srcs/error_2.c srcs/parse_main_map.c srcs/parse_map_utils.c srcs/parse_news_fc_r.c srcs/tools.c srcs/raycasting.c
 OBJS = ${SRCS:.c=.o}
 
 CC = clang
@@ -14,7 +14,7 @@ all:	$(NAME)
 $(NAME): ${OBJS}
 	$(MAKE) -C minilibx-linux
 	cp minilibx-linux/libmlx.a .
-	$(CC) -o $(NAME) $(CFLAGS) ${OBJS} libmlx.a	-lm -lbsd -lX11 -lXext
+	$(CC) -o $(NAME) $(CFLAGS) ${OBJS} libmlx.a	-lm -lbsd -lX11 -lXext -g -fsanitize=address -O3
 
 clean:
 	${RM} ${OBJS} ${OBJS_BONUS}
