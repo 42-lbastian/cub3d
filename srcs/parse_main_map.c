@@ -6,7 +6,7 @@
 /*   By: Bastian <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/04 14:37:29 by Bastian           #+#    #+#             */
-/*   Updated: 2020/06/18 10:45:16 by Bastian          ###   ########.fr       */
+/*   Updated: 2020/07/08 15:56:39 by Bastian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ static int	parse_map_fill(int fd2, int fd3, t_cub *cub, int count)
 		while (read(fd3, &c, 1) > 0 && c != '\n')
 		{
 			if (c == ' ')
-				cub->map[i][y] = 3;
+				cub->map[i][y] = 1;
 			else if (c == '1' || c == '2' || c == '0' ||
 			c == 'N' || c == 'S' || c == 'E' || c == 'W')
 				cub->map[i][y] = c - '0';

@@ -6,7 +6,7 @@
 /*   By: Bastian <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/04 14:39:41 by Bastian           #+#    #+#             */
-/*   Updated: 2020/07/02 12:35:42 by Bastian          ###   ########.fr       */
+/*   Updated: 2020/07/09 18:14:05 by Bastian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,17 @@ typedef struct	s_vect
 	double camera_x;
 }				t_vect;
 
+typedef struct	s_sprite
+{
+	int	height;
+	int width;
+	void *sprite;
+	unsigned int *data_sp;
+	int nb;
+	int **specs;
+}				t_sprite;
+
+
 typedef struct	s_count
 {
 	double i;
@@ -52,7 +63,6 @@ typedef struct	s_draw
 typedef struct	s_move
 {
 	double move_speed;
-	int crouch;
 	double rot_speed;
 }				t_move;
 
@@ -90,7 +100,6 @@ typedef	struct	s_image
 	void *north;
 	void *east;
 	void *west;
-	void *sprite;
 	unsigned int *data_img;
 	unsigned int *data_rendering;
 	void *img_rendering;
@@ -102,6 +111,8 @@ typedef	struct	s_image
 	double step;
 	double wall_x;
 	int bordel; //A CHANGER
+	int endian;
+	int bpp;
 }				t_image;
 
 typedef	struct	s_mxl
@@ -115,6 +126,7 @@ typedef	struct	s_mxl
 	t_space space;
 	t_image image;
 	t_count count;
+	t_sprite sprite;
 }				t_mlx;
 
 int				ft_parse(char *str, t_cub *cub, int fd);

@@ -33,13 +33,24 @@ int             close_mlx(int keycode, t_vars **vars)
 
 int				toto(t_vars **vars)
 {
+	int toto = 0;
+	int rvb[3] = {0,0,0};
 
-	unsigned  int color = mlx_get_color_value((*vars)->init, (255 << 16) + (0 << 8) + 0);
-	for (int z = 32; z> 0; z++)
-		printf("%d ", color << z);
-	printf("\n");
-	printf("\n");
-	printf("\n");
+	unsigned  int color = mlx_get_color_value((*vars)->init, (1 << 16) + (254 << 8) + 4);
+/*	for (int z = 31; z>= 0; z--)
+	{
+		if (color & (1u << z))
+			printf("1-%d\n", z);
+		else
+			printf("0-%d\n", z);
+	}
+*/
+	for (int z = 0; z <= 23; z++)
+	{
+		if (1u << z & color)
+			rvb[(z) / 8] += pow(2, z % 8);
+	}
+	printf("%d-%d-%d\n", rvb[0], rvb[1], rvb[2]);
 	return (1);
 }
 

@@ -14,7 +14,7 @@ all:	$(NAME)
 $(NAME): ${OBJS}
 	$(MAKE) -C minilibx-linux
 	cp minilibx-linux/libmlx.a .
-	$(CC) -o $(NAME) $(CFLAGS) ${OBJS} libmlx.a	-lm -lbsd -lX11 -lXext -g -fsanitize=address -O3
+	$(CC) -o $(NAME) $(CFLAGS) ${OBJS} libmlx.a	-lm -lbsd -lX11 -lXext -O3
 
 clean:
 	${RM} ${OBJS} ${OBJS_BONUS}

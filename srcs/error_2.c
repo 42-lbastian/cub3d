@@ -6,7 +6,7 @@
 /*   By: Bastian <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/09 11:22:49 by Bastian           #+#    #+#             */
-/*   Updated: 2020/06/26 11:55:28 by Bastian          ###   ########.fr       */
+/*   Updated: 2020/07/07 11:55:22 by Bastian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,7 +98,7 @@ int			ft_verif_sprites(t_mlx *mlx)
 		return (1);
 	if (!((mlx->image.west = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_w, &mlx->image.width, &mlx->image.height)) && mlx->image.west))
 		return (1);
-	if (!((mlx->image.sprite = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_sp, &mlx->image.width, &mlx->image.height)) && mlx->image.sprite))
+	if (!((mlx->sprite.sprite = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_sp, &mlx->sprite.width, &mlx->sprite.height)) && mlx->sprite.sprite))
 		return (1);
 	return (0);
 }
