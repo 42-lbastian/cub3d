@@ -6,7 +6,7 @@
 /*   By: Bastian <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/04 14:37:29 by Bastian           #+#    #+#             */
-/*   Updated: 2020/07/08 15:56:39 by Bastian          ###   ########.fr       */
+/*   Updated: 2020/09/15 18:31:13 by Bastian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 static void	parse_map_init(int fd2, int fd3)
 {
 	char c;
-	c = 0;
 
+	c = 0;
 	while (1)
 	{
 		if (c != '\n' && read(fd3, &c, 1) > 0 && read(fd2, &c, 1) > 0)
@@ -33,6 +33,14 @@ static void	parse_map_init(int fd2, int fd3)
 	}
 }
 
+static void	ft_fuck(t_cub *cub, int i, char c, int fd2)
+{
+	while (read(fd2, &c, 1) > 0 && c != '\n')
+		cub->size_map[i]++;
+	if (!(cub->map[i] = malloc(sizeof(int) * cub->size_map[i])))
+		cub->map = NULL;
+}
+
 static int	parse_map_fill(int fd2, int fd3, t_cub *cub, int count)
 {
 	char	c;
@@ -42,13 +50,12 @@ static int	parse_map_fill(int fd2, int fd3, t_cub *cub, int count)
 	i = -1;
 	while (++i < count)
 	{
-		while (read(fd2, &c, 1) > 0 && c != '\n')
-			cub->size_map[i]++;
-		if (!(cub->map[i] = malloc(sizeof(int) * cub->size_map[i])))
-			cub->map = NULL;
+		ft_fuck(cub, i, c, fd2);
 		y = 0;
 		while (read(fd3, &c, 1) > 0 && c != '\n')
 		{
+			if (c == '2')
+				cub->nb_sprites++;
 			if (c == ' ')
 				cub->map[i][y] = 1;
 			else if (c == '1' || c == '2' || c == '0' ||
@@ -86,27 +93,6 @@ static int	parse_map(int fd, char *str, t_cub *cub)
 		close(fd2);
 	}
 	return (0);
-}
-
-int			ft_parse_2(char c, t_cub *cub, int fd, int error)
-{
-	if (c == 'R')
-		error += ft_parse_r(fd, cub->r);
-	else if (c == 'F')
-		error += ft_parse_fc(fd, &cub->f, 0, "floor");
-	else if (c == 'C')
-		error += ft_parse_fc(fd, &cub->c, 0, "ceilling");
-	else if (c == 'S')
-		error += ft_parse_news(fd, cub->path_sp, ' ', cub);
-	else if (c == 'N')
-		error += ft_parse_news(fd, cub->path_n, 'O', cub);
-	else if (c == 'W')
-		error += ft_parse_news(fd, cub->path_w, 'E', cub);
-	else if (c == 'E')
-		error += ft_parse_news(fd, cub->path_e, 'A', cub);
-	else if (c != ' ' && c != '\n' && c != '1')
-		return (1);
-	return (error);
 }
 
 int			ft_parse(char *str, t_cub *cub, int fd)

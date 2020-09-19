@@ -6,7 +6,7 @@
 /*   By: Bastian <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/04 14:39:41 by Bastian           #+#    #+#             */
-/*   Updated: 2020/07/09 18:14:05 by Bastian          ###   ########.fr       */
+/*   Updated: 2020/09/15 19:12:36 by Bastian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,21 @@ typedef struct	s_sprite
 	void *sprite;
 	unsigned int *data_sp;
 	int nb;
+	double x;
+	double y;
+	double inv_det;
+	double transform_x;
+	double transform_y;
+	int		screen_x;
+	int		sprite_height;
+	int		sprite_width;
+	int		draw_start_x;
+	int		draw_start_y;
+	int		draw_end_x;
+	int		draw_end_y;
+	int		d;
+	int		tex_x;
+	int		tex_y;
 	int **specs;
 }				t_sprite;
 
@@ -50,6 +65,7 @@ typedef struct	s_count
 {
 	double i;
 	int l;
+	int stripe;
 }				t_count;
 
 typedef struct	s_draw
@@ -78,6 +94,8 @@ typedef	struct	s_cub
 	int		c;
 	int		**map;
 	int		*size_map;
+	char	save;
+	int nb_sprites;
 }				t_cub;
 
 typedef	struct	s_space
@@ -145,5 +163,38 @@ int				ft_comp_float(float nb_1, float nb_2);
 int				count_lines_map(int fd);
 void			init_size_cub(t_cub *cub, int count);
 int				ft_raycast_launch(t_mlx *mlx);
+void			ft_turn_left(t_mlx **mlx);
+void			ft_turn_right(t_mlx **mlx);
+void			ft_backward(t_mlx **mlx);
+void			ft_forward(t_mlx **mlx);
+void			ft_init_position(t_mlx *mlx);
+void			ft_init_raycast(t_mlx **mlx);
+void			ft_init_value(t_mlx *mlx);
+int				ft_give_xy_map(t_cub *cub, int fact);
+int				ft_position_player(t_cub *cub);
+int				ft_position_sprite(t_mlx **mlx);
+void			ft_wall(t_mlx **mlx);
+void			ft_wall_2(t_mlx **mlx);
+void			ft_wall_text(t_mlx **mlx);
+void			ft_draw_image(t_mlx **mlx);
+void			ft_sprite(t_mlx **mlx, double dist_buffer[(*mlx)->cub.r[0]], int i, int y);
+void			sort_sprites(int *order, double *dist, int nb);
+void			ft_direction(t_mlx **mlx);
+void			ft_obstacle_calculation(t_mlx **mlx);
+void			ft_putchar_fd(char c, int fd);
+void			ft_putstr_fd(char *s, int fd, int nb);
+void			ft_print_null(int nb, int fd);
+void			free_cub(t_cub *cub);
+int				ft_parse_2(char c, t_cub *cub, int fd, int error);
+void			ft_calc_sprite_2(t_mlx **mlx);
+void			ft_sprite_draw(t_mlx **mlx, int y, double sprite_dist[(*mlx)->sprite.nb], int i);
+void			ft_sprite_calc_draw(t_mlx **mlx);
+void			ft_sprite_calc_coord(t_mlx **mlx, int i, int sprite_order[(*mlx)->sprite.nb]);
+void			ft_sprite_order(t_mlx **mlx, int i, double sprite_dist[(*mlx)->sprite.nb], int sprite_order[(*mlx)->sprite.nb]);
+void			ft_magic_bmp(t_mlx **mlx);
+int				ft_free_all(t_mlx **mlx);
+int				ft_invalid_file(t_mlx **mlx);
+int				ft_invalid_arg(void);
+void			ft_fuck_norm_27_to_25(t_mlx *mlx);
 
 #endif

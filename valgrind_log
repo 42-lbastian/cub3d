@@ -1,478 +1,366 @@
-==7597== Memcheck, a memory error detector
-==7597== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7597== Using Valgrind-3.16.0.GIT and LibVEX; rerun with -h for copyright info
-==7597== Command: ./a.out maps_test/good_map_1.cub maps_test/good_map_1.cub
-==7597== Parent PID: 7551
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x10000C330: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007035: _dyld_start (in /usr/lib/dyld)
-==7597==    by 0x2: ???
-==7597==    by 0x1048D06AA: ???
-==7597==    by 0x1048D06B2: ???
-==7597==    by 0x1048D06CB: ???
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x10000E456: dyld::checkEnvironmentVariables(char const**) (in /usr/lib/dyld)
-==7597==    by 0x10000C339: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007035: _dyld_start (in /usr/lib/dyld)
-==7597==    by 0x2: ???
-==7597==    by 0x1048D06AA: ???
-==7597==    by 0x1048D06B2: ???
-==7597==    by 0x1048D06CB: ???
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x100008BBC: dyld::processDyldEnvironmentVariable(char const*, char const*, char const*) (in /usr/lib/dyld)
-==7597==    by 0x10000E566: dyld::checkEnvironmentVariables(char const**) (in /usr/lib/dyld)
-==7597==    by 0x10000C339: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007035: _dyld_start (in /usr/lib/dyld)
-==7597==    by 0x2: ???
-==7597==    by 0x1048D06AA: ???
-==7597==    by 0x1048D06B2: ???
-==7597==    by 0x1048D06CB: ???
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x10000C341: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007035: _dyld_start (in /usr/lib/dyld)
-==7597==    by 0x2: ???
-==7597==    by 0x1048D06AA: ???
-==7597==    by 0x1048D06B2: ???
-==7597==    by 0x1048D06CB: ???
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x10001039D: dyld::loadPhase3(char const*, char const*, dyld::LoadContext const&, unsigned int&, std::__1::vector<char const*, std::__1::allocator<char const*> >*) (in /usr/lib/dyld)
-==7597==    by 0x10000FD17: dyld::loadPhase1(char const*, char const*, dyld::LoadContext const&, unsigned int&, std::__1::vector<char const*, std::__1::allocator<char const*> >*) (in /usr/lib/dyld)
-==7597==    by 0x100009AC9: dyld::loadPhase0(char const*, char const*, dyld::LoadContext const&, unsigned int&, std::__1::vector<char const*, std::__1::allocator<char const*> >*) (in /usr/lib/dyld)
-==7597==    by 0x10000961D: dyld::load(char const*, dyld::LoadContext const&, unsigned int&) (in /usr/lib/dyld)
-==7597==    by 0x10000D3A0: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007035: _dyld_start (in /usr/lib/dyld)
-==7597==    by 0x2: ???
-==7597==    by 0x1048D06AA: ???
-==7597==    by 0x1048D06B2: ???
-==7597==    by 0x1048D06CB: ???
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x10001039D: dyld::loadPhase3(char const*, char const*, dyld::LoadContext const&, unsigned int&, std::__1::vector<char const*, std::__1::allocator<char const*> >*) (in /usr/lib/dyld)
-==7597==    by 0x10000FD17: dyld::loadPhase1(char const*, char const*, dyld::LoadContext const&, unsigned int&, std::__1::vector<char const*, std::__1::allocator<char const*> >*) (in /usr/lib/dyld)
-==7597==    by 0x100009AC9: dyld::loadPhase0(char const*, char const*, dyld::LoadContext const&, unsigned int&, std::__1::vector<char const*, std::__1::allocator<char const*> >*) (in /usr/lib/dyld)
-==7597==    by 0x100009658: dyld::load(char const*, dyld::LoadContext const&, unsigned int&) (in /usr/lib/dyld)
-==7597==    by 0x10000D3A0: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007035: _dyld_start (in /usr/lib/dyld)
-==7597==    by 0x2: ???
-==7597==    by 0x1048D06AA: ???
-==7597==    by 0x1048D06B2: ???
-==7597==    by 0x1048D06CB: ???
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x100133726: ccaes_vng_ctr_crypt (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x10013363B: bcc_update (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x10013487C: df_bcc_update (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100134654: df (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100132FD4: nistctr_init (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100132E2B: init (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x1002FDCFE: arc4_init (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1002FDE1C: arc4random_buf (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1005E4739: _read_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3788: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x100133726: ccaes_vng_ctr_crypt (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x10013363B: bcc_update (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x10013490C: df_bcc_update (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100134654: df (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100132FD4: nistctr_init (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100132E2B: init (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x1002FDCFE: arc4_init (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1002FDE1C: arc4random_buf (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1005E4739: _read_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3788: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x100133726: ccaes_vng_ctr_crypt (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x10013363B: bcc_update (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x1001346B6: df (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100132FD4: nistctr_init (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100132E2B: init (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x1002FDCFE: arc4_init (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1002FDE1C: arc4random_buf (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1005E4739: _read_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3788: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597==    by 0x10000B62D: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x100133726: ccaes_vng_ctr_crypt (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x10013476B: df (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100132FD4: nistctr_init (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100132E2B: init (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x1002FDCFE: arc4_init (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1002FDE1C: arc4random_buf (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1005E4739: _read_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3788: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597==    by 0x10000B62D: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7597==    by 0x10023EA26: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x100134A4E: drbg_update (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x10013304C: nistctr_init (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100132E2B: init (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x1002FDCFE: arc4_init (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1002FDE1C: arc4random_buf (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1005E4739: _read_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3788: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597==    by 0x10000B62D: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7597==    by 0x10023EA26: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
-==7597==    by 0x1005E2F73: _objc_init (in /usr/lib/libobjc.A.dylib)
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x100133726: ccaes_vng_ctr_crypt (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100134C6E: generate (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x1002FDE87: arc4random_buf (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1005E4739: _read_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3788: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597==    by 0x10000B62D: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7597==    by 0x10023EA26: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
-==7597==    by 0x1005E2F73: _objc_init (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1001D5E35: _os_object_init (in /usr/lib/system/libdispatch.dylib)
-==7597==    by 0x1001E1AD1: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x100133726: ccaes_vng_ctr_crypt (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x1001349D1: drbg_update (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100134CB9: generate (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x1002FDE87: arc4random_buf (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1005E4739: _read_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3788: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597==    by 0x10000B62D: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7597==    by 0x10023EA26: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
-==7597==    by 0x1005E2F73: _objc_init (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1001D5E35: _os_object_init (in /usr/lib/system/libdispatch.dylib)
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x1001349EE: drbg_update (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100134CB9: generate (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x1002FDE87: arc4random_buf (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1005E4739: _read_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3788: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597==    by 0x10000B62D: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7597==    by 0x10023EA26: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
-==7597==    by 0x1005E2F73: _objc_init (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1001D5E35: _os_object_init (in /usr/lib/system/libdispatch.dylib)
-==7597==    by 0x1001E1AD1: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x100134A4E: drbg_update (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x100134CB9: generate (in /usr/lib/system/libcorecrypto.dylib)
-==7597==    by 0x1002FDE87: arc4random_buf (in /usr/lib/system/libsystem_c.dylib)
-==7597==    by 0x1005E4739: _read_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3788: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597==    by 0x10000B62D: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7597==    by 0x10023EA26: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
-==7597==    by 0x1005E2F73: _objc_init (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1001D5E35: _os_object_init (in /usr/lib/system/libdispatch.dylib)
-==7597==    by 0x1001E1AD1: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x1005EB6BC: _objc_registerTaggedPointerClass (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100590CA4: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x1000E59C9: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7597==    by 0x10001E591: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x10001E797: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x100019BE9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100019B7F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018D72: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018E04: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
-==7597==    by 0x10000871E: dyld::initializeMainExecutable() (in /usr/lib/dyld)
-==7597==    by 0x10000D708: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597== 
-==7597== Use of uninitialised value of size 8
-==7597==    at 0x1005EB6BE: _objc_registerTaggedPointerClass (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100590CA4: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x1000E59C9: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7597==    by 0x10001E591: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x10001E797: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x100019BE9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100019B7F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018D72: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018E04: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
-==7597==    by 0x10000871E: dyld::initializeMainExecutable() (in /usr/lib/dyld)
-==7597==    by 0x10000D708: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597== 
-==7597== Use of uninitialised value of size 8
-==7597==    at 0x1005EB6D0: _objc_registerTaggedPointerClass (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100590CA4: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x1000E59C9: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7597==    by 0x10001E591: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x10001E797: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x100019BE9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100019B7F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018D72: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018E04: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
-==7597==    by 0x10000871E: dyld::initializeMainExecutable() (in /usr/lib/dyld)
-==7597==    by 0x10000D708: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597== 
-==7597== Use of uninitialised value of size 8
-==7597==    at 0x1005EB6EE: _objc_registerTaggedPointerClass (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100590CA4: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x1000E59C9: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7597==    by 0x10001E591: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x10001E797: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x100019BE9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100019B7F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018D72: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018E04: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
-==7597==    by 0x10000871E: dyld::initializeMainExecutable() (in /usr/lib/dyld)
-==7597==    by 0x10000D708: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597== 
-==7597== Use of uninitialised value of size 8
-==7597==    at 0x1005EB6FC: _objc_registerTaggedPointerClass (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100590CA4: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x1000E59C9: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7597==    by 0x10001E591: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x10001E797: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x100019BE9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100019B7F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018D72: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018E04: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
-==7597==    by 0x10000871E: dyld::initializeMainExecutable() (in /usr/lib/dyld)
-==7597==    by 0x10000D708: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x1005EB6BC: _objc_registerTaggedPointerClass (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100590CBD: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x1000E59C9: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7597==    by 0x10001E591: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x10001E797: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x100019BE9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100019B7F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018D72: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018E04: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
-==7597==    by 0x10000871E: dyld::initializeMainExecutable() (in /usr/lib/dyld)
-==7597==    by 0x10000D708: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597== 
-==7597== Use of uninitialised value of size 8
-==7597==    at 0x1005EB6BE: _objc_registerTaggedPointerClass (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100590CBD: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x1000E59C9: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7597==    by 0x10001E591: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x10001E797: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x100019BE9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100019B7F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018D72: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018E04: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
-==7597==    by 0x10000871E: dyld::initializeMainExecutable() (in /usr/lib/dyld)
-==7597==    by 0x10000D708: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597== 
-==7597== Use of uninitialised value of size 8
-==7597==    at 0x1005EB6D0: _objc_registerTaggedPointerClass (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100590CBD: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x1000E59C9: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7597==    by 0x10001E591: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x10001E797: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x100019BE9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100019B7F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018D72: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018E04: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
-==7597==    by 0x10000871E: dyld::initializeMainExecutable() (in /usr/lib/dyld)
-==7597==    by 0x10000D708: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597== 
-==7597== Use of uninitialised value of size 8
-==7597==    at 0x1005EB6EE: _objc_registerTaggedPointerClass (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100590CBD: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x1000E59C9: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7597==    by 0x10001E591: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x10001E797: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x100019BE9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100019B7F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018D72: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018E04: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
-==7597==    by 0x10000871E: dyld::initializeMainExecutable() (in /usr/lib/dyld)
-==7597==    by 0x10000D708: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597==    by 0x100007502: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x100591C1F: xpc_uint64_create (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x100591BAD: _xpc_collect_images (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x10059101E: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x1000E59C9: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7597==    by 0x10001E591: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x10001E797: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x100019BE9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100019B7F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018D72: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018E04: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
-==7597==    by 0x10000871E: dyld::initializeMainExecutable() (in /usr/lib/dyld)
-==7597==    by 0x10000D708: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x10059197A: _xpc_dictionary_insert (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x100591D05: _xpc_dyld_image_callback (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x10000A873: dyld::registerLoadCallback(void (*)(mach_header const*, char const*, bool)) (in /usr/lib/dyld)
-==7597==    by 0x100591BBD: _xpc_collect_images (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x10059101E: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x1000E59C9: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7597==    by 0x10001E591: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x10001E797: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x100019BE9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100019B7F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018D72: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018E04: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
-==7597== 
-==7597== Conditional jump or move depends on uninitialised value(s)
-==7597==    at 0x1005919E4: _xpc_dictionary_insert (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x100591D05: _xpc_dyld_image_callback (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x10000A873: dyld::registerLoadCallback(void (*)(mach_header const*, char const*, bool)) (in /usr/lib/dyld)
-==7597==    by 0x100591BBD: _xpc_collect_images (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x10059101E: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
-==7597==    by 0x1000E59C9: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7597==    by 0x10001E591: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x10001E797: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x100019BE9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100019B7F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018D72: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
-==7597==    by 0x100018E04: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
-==7597== 
-==7597== 
-==7597== HEAP SUMMARY:
-==7597==     in use at exit: 19,439 bytes in 168 blocks
-==7597==   total heap usage: 189 allocs, 21 frees, 27,887 bytes allocated
-==7597== 
-==7597== 24 bytes in 1 blocks are still reachable in loss record 4 of 43
-==7597==    at 0x1000D9E2A: malloc_zone_malloc (in /usr/local/Cellar/valgrind/HEAD-fc32b97/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7597==    by 0x1005E55BF: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E5591: NXCreateMapTable (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100600E5D: __sel_registerName(char const*, bool, bool) (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3E1C: sel_init (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3674: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597==    by 0x10000B62D: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7597==    by 0x10023EA26: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
-==7597==    by 0x1005E2F73: _objc_init (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1001D5E35: _os_object_init (in /usr/lib/system/libdispatch.dylib)
-==7597== 
-==7597== 32 bytes in 1 blocks are still reachable in loss record 9 of 43
-==7597==    at 0x1000D9E2A: malloc_zone_malloc (in /usr/local/Cellar/valgrind/HEAD-fc32b97/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7597==    by 0x1005E5770: NXCreateHashTableFromZone (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E573E: NXCreateHashTable (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E55F7: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E5591: NXCreateMapTable (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100600E5D: __sel_registerName(char const*, bool, bool) (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3E1C: sel_init (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3674: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597==    by 0x10000B62D: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7597==    by 0x10023EA26: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
-==7597== 
-==7597== 32 bytes in 1 blocks are still reachable in loss record 10 of 43
-==7597==    at 0x1000D9E2A: malloc_zone_malloc (in /usr/local/Cellar/valgrind/HEAD-fc32b97/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7597==    by 0x1005E5791: NXCreateHashTableFromZone (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E573E: NXCreateHashTable (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E55F7: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E5591: NXCreateMapTable (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100600E5D: __sel_registerName(char const*, bool, bool) (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3E1C: sel_init (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3674: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597==    by 0x10000B62D: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7597==    by 0x10023EA26: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
-==7597== 
-==7597== 32 bytes in 1 blocks are still reachable in loss record 11 of 43
-==7597==    at 0x1000D9BB5: malloc (in /usr/local/Cellar/valgrind/HEAD-fc32b97/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7597==    by 0x1005E5855: NXCreateHashTableFromZone (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E573E: NXCreateHashTable (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E55F7: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E5591: NXCreateMapTable (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100600E5D: __sel_registerName(char const*, bool, bool) (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3E1C: sel_init (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3674: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597==    by 0x10000B62D: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7597==    by 0x10023EA26: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
-==7597== 
-==7597== 32 bytes in 1 blocks are still reachable in loss record 12 of 43
-==7597==    at 0x1000D9BB5: malloc (in /usr/local/Cellar/valgrind/HEAD-fc32b97/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7597==    by 0x1005E5661: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E5591: NXCreateMapTable (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100600E5D: __sel_registerName(char const*, bool, bool) (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3E1C: sel_init (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3674: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597==    by 0x10000B62D: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7597==    by 0x10023EA26: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
-==7597==    by 0x1005E2F73: _objc_init (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1001D5E35: _os_object_init (in /usr/lib/system/libdispatch.dylib)
-==7597== 
-==7597== 48 bytes in 1 blocks are still reachable in loss record 17 of 43
-==7597==    at 0x1000DA3D1: malloc_zone_calloc (in /usr/local/Cellar/valgrind/HEAD-fc32b97/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7597==    by 0x1005E5C00: _NXHashRehashToCapacity (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E5B8A: NXHashInsert (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E587F: NXCreateHashTableFromZone (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E573E: NXCreateHashTable (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E55F7: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E5591: NXCreateMapTable (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x100600E5D: __sel_registerName(char const*, bool, bool) (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3E1C: sel_init (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005E3674: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597== 
-==7597== 48 bytes in 2 blocks are possibly lost in loss record 20 of 43
-==7597==    at 0x1000DA210: calloc (in /usr/local/Cellar/valgrind/HEAD-fc32b97/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7597==    by 0x1005E347B: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1005F5F30: map_images (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x10000B47A: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7597==    by 0x10000B62D: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7597==    by 0x10023EA26: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
-==7597==    by 0x1005E2F73: _objc_init (in /usr/lib/libobjc.A.dylib)
-==7597==    by 0x1001D5E35: _os_object_init (in /usr/lib/system/libdispatch.dylib)
-==7597==    by 0x1001E1AD1: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
-==7597==    by 0x1000E59C4: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7597==    by 0x10001E591: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597==    by 0x10001E797: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7597== 
-==7597== LEAK SUMMARY:
-==7597==    definitely lost: 0 bytes in 0 blocks
-==7597==    indirectly lost: 0 bytes in 0 blocks
-==7597==      possibly lost: 48 bytes in 2 blocks
-==7597==    still reachable: 200 bytes in 6 blocks
-==7597==         suppressed: 19,191 bytes in 160 blocks
-==7597== 
-==7597== Use --track-origins=yes to see where uninitialised values come from
-==7597== For lists of detected and suppressed errors, rerun with: -s
-==7597== ERROR SUMMARY: 425 errors from 28 contexts (suppressed: 9 from 9)
+==23744== Memcheck, a memory error detector
+==23744== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23744== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==23744== Command: ./Cub3D maps_test/good_map_1.cub
+==23744== Parent PID: 3577
+==23744== 
+==23744== Conditional jump or move depends on uninitialised value(s)
+==23744==    at 0x404452: ft_sprite (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x403DD1: ft_raycast (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x4052C5: mlx_loop (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402F91: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 
+==23744== HEAP SUMMARY:
+==23744==     in use at exit: 73,081 bytes in 59 blocks
+==23744==   total heap usage: 1,322 allocs, 1,263 frees, 1,172,234 bytes allocated
+==23744== 
+==23744== 5 bytes in 1 blocks are still reachable in loss record 1 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x59D6A29: strdup (strdup.c:42)
+==23744==    by 0x541CE91: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 8 bytes in 1 blocks are still reachable in loss record 2 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x59D6A29: strdup (strdup.c:42)
+==23744==    by 0x5416F19: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x5733FDE: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x572F4DC: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x404CEF: mlx_int_deal_shm (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x404E9B: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 8 bytes in 1 blocks are still reachable in loss record 3 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5733D3E: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5733DAA: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5734181: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x572F4DC: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x404CEF: mlx_int_deal_shm (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x404E9B: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 10 bytes in 1 blocks are still reachable in loss record 4 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x59D6A29: strdup (strdup.c:42)
+==23744==    by 0x5416F19: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x548118B: XkbUseExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x541D903: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 16 bytes in 1 blocks are still reachable in loss record 5 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5F4090D: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F3EE43: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F3D478: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F41464: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x542C521: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x541CEB1: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 21 bytes in 1 blocks are still reachable in loss record 6 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x541D335: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 24 bytes in 1 blocks are still reachable in loss record 7 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5733F4D: XextCreateExtension (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5733A14: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5733D97: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5734181: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x572F4DC: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x404CEF: mlx_int_deal_shm (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x404E9B: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 24 bytes in 1 blocks are still reachable in loss record 8 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x59D6A29: strdup (strdup.c:42)
+==23744==    by 0x5416F19: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x5733FDE: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5733A52: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5733D97: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5734181: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x572F4DC: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x404CEF: mlx_int_deal_shm (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x404E9B: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 24 bytes in 1 blocks are still reachable in loss record 9 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5733DCD: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5734181: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x572F4DC: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x404CEF: mlx_int_deal_shm (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x404E9B: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 29 bytes in 1 blocks are still reachable in loss record 10 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5417D87: _XUpdateAtomCache (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x5418149: XInternAtom (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x5428653: XSetWMProtocols (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x4051C3: mlx_new_window (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402ED3: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 32 bytes in 1 blocks are still reachable in loss record 11 of 41
+==23744==    at 0x4C2FA3F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x4C31D84: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5F40576: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F405F9: xcb_get_extension_data (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F3DC4E: xcb_prefetch_maximum_request_length (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F3DCC4: xcb_get_maximum_request_length (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x541D7BB: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 32 bytes in 1 blocks are still reachable in loss record 12 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5F3FC5B: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F3DA07: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F3F06E: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F3F17F: xcb_wait_for_reply (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F40642: xcb_get_extension_data (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F3DC4E: xcb_prefetch_maximum_request_length (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F3DCC4: xcb_get_maximum_request_length (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x541D7BB: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 32 bytes in 1 blocks are still reachable in loss record 13 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5733FBF: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x572F4DC: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x404CEF: mlx_int_deal_shm (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x404E9B: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 32 bytes in 1 blocks are still reachable in loss record 14 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5733FBF: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5733A52: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5733D97: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5734181: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x572F4DC: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x404CEF: mlx_int_deal_shm (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x404E9B: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 33 bytes in 1 blocks are still reachable in loss record 15 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5417D87: _XUpdateAtomCache (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x5418149: XInternAtom (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E8D: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 40 bytes in 1 blocks are still reachable in loss record 16 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x542E57D: _XPollfdCacheInit (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x541D165: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 48 bytes in 1 blocks are still reachable in loss record 17 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x542C4A9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x541CEB1: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 48 bytes in 1 blocks are still reachable in loss record 18 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x542C4BF: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x541CEB1: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 72 bytes in 1 blocks are still reachable in loss record 19 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x541D214: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 104 bytes in 1 blocks are still reachable in loss record 20 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x542C3AE: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x541CEB1: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 112 bytes in 1 blocks are still reachable in loss record 21 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x541D4EF: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 128 bytes in 1 blocks are still reachable in loss record 22 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x541D41F: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 128 bytes in 1 blocks are still reachable in loss record 23 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5416F09: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x548118B: XkbUseExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x541D903: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 128 bytes in 1 blocks are still reachable in loss record 24 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5416F09: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x5733FDE: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x572F4DC: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x404CEF: mlx_int_deal_shm (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x404E9B: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 128 bytes in 1 blocks are still reachable in loss record 25 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5416F09: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x5733FDE: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5733A52: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5733D97: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5734181: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x572F4DC: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x404CEF: mlx_int_deal_shm (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x404E9B: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 152 bytes in 1 blocks are still reachable in loss record 26 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x548127E: XkbUseExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x541D903: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 160 bytes in 1 blocks are still reachable in loss record 27 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x540B2FB: XCreateGC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x541D837: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 160 bytes in 1 blocks are still reachable in loss record 28 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x540B2FB: XCreateGC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x4051EE: mlx_new_window (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402ED3: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 168 bytes in 1 blocks are still reachable in loss record 29 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x541D3A0: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 208 bytes in 1 blocks are still reachable in loss record 30 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5733CE9: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5733DAA: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x5734181: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x572F4DC: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==23744==    by 0x404CEF: mlx_int_deal_shm (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x404E9B: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 416 bytes in 2 blocks are still reachable in loss record 31 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x542FB2E: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x542C87E: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x542D7EF: _XReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x54180DE: XInternAtom (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x5428653: XSetWMProtocols (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x4051C3: mlx_new_window (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402ED3: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 416 bytes in 2 blocks are still reachable in loss record 32 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x542FB2E: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x542C87E: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x542D2E8: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x542B88D: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x405481: mlx_int_wait_first_expose (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x405229: mlx_new_window (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402ED3: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 512 bytes in 1 blocks are still reachable in loss record 33 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5417CB3: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x5418069: XInternAtom (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E8D: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 936 bytes in 1 blocks are still reachable in loss record 34 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x405150: mlx_new_window (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402ED3: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 1,331 bytes in 1 blocks are still reachable in loss record 35 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x541D96F: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 3,328 bytes in 16 blocks are still reachable in loss record 36 of 41
+==23744==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x542FB2E: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x542C87E: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x542D334: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x542B88D: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x405481: mlx_int_wait_first_expose (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x405229: mlx_new_window (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402ED3: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 4,680 bytes in 1 blocks are still reachable in loss record 37 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x541CE7D: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 6,692 bytes in 1 blocks are still reachable in loss record 38 of 41
+==23744==    at 0x4C31D2F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5F3D5AD: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F41464: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x542C521: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x541CEB1: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 15,120 bytes in 2 blocks are still reachable in loss record 39 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x541D623: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 16,384 bytes in 1 blocks are still reachable in loss record 40 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x541D1B5: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== 21,152 bytes in 1 blocks are still reachable in loss record 41 of 41
+==23744==    at 0x4C31B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23744==    by 0x5F3D3C0: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x5F41464: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==23744==    by 0x542C521: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x541CEB1: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==23744==    by 0x404E12: mlx_init (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744==    by 0x402561: main (in /media/sf_42/Cub3D/cub3D/Cub3D)
+==23744== 
+==23744== LEAK SUMMARY:
+==23744==    definitely lost: 0 bytes in 0 blocks
+==23744==    indirectly lost: 0 bytes in 0 blocks
+==23744==      possibly lost: 0 bytes in 0 blocks
+==23744==    still reachable: 73,081 bytes in 59 blocks
+==23744==         suppressed: 0 bytes in 0 blocks
+==23744== 
+==23744== For counts of detected and suppressed errors, rerun with: -v
+==23744== Use --track-origins=yes to see where uninitialised values come from
+==23744== ERROR SUMMARY: 15 errors from 1 contexts (suppressed: 2 from 1)

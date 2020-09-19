@@ -6,7 +6,7 @@
 /*   By: Bastian <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/09 11:22:49 by Bastian           #+#    #+#             */
-/*   Updated: 2020/07/07 11:55:22 by Bastian          ###   ########.fr       */
+/*   Updated: 2020/09/15 14:30:23 by Bastian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int			ft_verif_joueur(t_cub cub)
 	return (1);
 }
 
-static int	ft_verif_map_2(t_cub cub, int j, int i, int z)
+static int	ft_verif_map_2(t_cub cub, int j, int i)
 {
 	while (i < ft_size_map(cub.size_map) - 1)
 	{
@@ -49,7 +49,6 @@ static int	ft_verif_map_2(t_cub cub, int j, int i, int z)
 			return (1);
 		while (j < cub.size_map[i])
 		{
-			z = 1;
 			if ((cub.size_map[i - 1] <= (j + 1) && cub.map[i][j] != 1)
 			&& cub.map[i][j] != 3)
 				return (1);
@@ -76,7 +75,7 @@ int			ft_verif_map(t_cub cub)
 			return (1);
 		j++;
 	}
-	if (ft_verif_map_2(cub, j, i, 0))
+	if (ft_verif_map_2(cub, j, i))
 		return (1);
 	j = 0;
 	while (j < cub.size_map[ft_size_map(cub.size_map)])
@@ -90,15 +89,23 @@ int			ft_verif_map(t_cub cub)
 
 int			ft_verif_sprites(t_mlx *mlx)
 {
-	if (!((mlx->image.south = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_s, &mlx->image.width, &mlx->image.height)) && mlx->image.south))
+	if (!((mlx->image.south = mlx_xpm_file_to_image(mlx->mlx_init, mlx->
+		cub.path_s, &mlx->image.width, &mlx->image.height))
+			&& mlx->image.south))
 		return (1);
-	if (!((mlx->image.north = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_n, &mlx->image.width, &mlx->image.height)) && mlx->image.north))
+	if (!((mlx->image.north = mlx_xpm_file_to_image(mlx->mlx_init, mlx->
+		cub.path_n, &mlx->image.width, &mlx->image.height))
+			&& mlx->image.north))
 		return (1);
-	if (!((mlx->image.east = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_e, &mlx->image.width, &mlx->image.height)) && mlx->image.east))
+	if (!((mlx->image.east = mlx_xpm_file_to_image(mlx->mlx_init, mlx->
+		cub.path_e, &mlx->image.width, &mlx->image.height)) && mlx->image.east))
 		return (1);
-	if (!((mlx->image.west = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_w, &mlx->image.width, &mlx->image.height)) && mlx->image.west))
+	if (!((mlx->image.west = mlx_xpm_file_to_image(mlx->mlx_init, mlx->
+		cub.path_w, &mlx->image.width, &mlx->image.height)) && mlx->image.west))
 		return (1);
-	if (!((mlx->sprite.sprite = mlx_xpm_file_to_image(mlx->mlx_init, mlx->cub.path_sp, &mlx->sprite.width, &mlx->sprite.height)) && mlx->sprite.sprite))
+	if (!((mlx->sprite.sprite = mlx_xpm_file_to_image(mlx->mlx_init, mlx->
+		cub.path_sp, &mlx->sprite.width, &mlx->sprite.height)) &&
+			mlx->sprite.sprite))
 		return (1);
 	return (0);
 }
