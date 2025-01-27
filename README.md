@@ -4,9 +4,9 @@
 <h5 align="center">
   <a href="#description_id">Description</a> - 
   <a href="#usage_id">Usage</a> - 
-  <a href="#scene_id">Ressource</a>
-  <a href="#control_id">Ressource</a>
-  <a href="#tester_id">Ressource</a>
+  <a href="#scene_id">Scene</a> -
+  <a href="#control_id">Control</a> -
+  <a href="#tester_id">Tester</a>
 </h5>
 
 ---
