@@ -260,7 +260,7 @@ then
 	echo "\033[91mTest Fichier inexistant\033[0m"
 
 	echo ""
-	echo "\033[35mNIK.cub\033[0m"
+	echo "\033[35mNope.cub\033[0m"
 	./Cub3D maps_test/NIK.cub
 	echo ""
 
@@ -270,7 +270,7 @@ then
 	echo "\033[35mgood_map_1 && toto\033[0m"
 	./Cub3D maps_test/good_map_1.cub toto.cub
 	echo ""
-	echo "\033[35mNIK.cub\033[0m"
+	echo "\033[35mNope.cub\033[0m"
 	./Cub3D maps_test/good_map_1.cub maps_test/good_map_1.cub
 	echo ""
 
