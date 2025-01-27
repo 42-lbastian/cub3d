@@ -1,4 +1,4 @@
-NAME = cub3D
+NAME = Cub3D
 
 SRCS = srcs/cub3d.c srcs/error.c srcs/error_2.c srcs/parse_main_map.c srcs/parse_main_map_2.c srcs/parse_map_utils.c srcs/parse_news_fc_r.c srcs/tools.c srcs/raycasting.c srcs/move.c srcs/wall.c srcs/position.c srcs/draw_image.c srcs/init.c srcs/sprite.c srcs/sprite_2.c srcs/calculation.c srcs/tools_bmp.c srcs/bmp.c srcs/norme.c
 OBJS = ${SRCS:.c=.o}
