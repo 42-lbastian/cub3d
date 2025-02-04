@@ -1,4 +1,4 @@
-<h1 align="center"> push_swap </h1>
+<h1 align="center"> Cub3D </h1>
 <h4 align="center"> My first RayCaster with miniLibX </h4>
 
 <h5 align="center">
